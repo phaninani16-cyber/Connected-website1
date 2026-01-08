@@ -1,96 +1,140 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>ConnectEd | Education That Fits Your Future</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ConnectEd is a career-first education discovery platform for curious minds." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <meta name="description" content="ConnectEd helps students find education that fits their future.">
 </head>
 
-<body class="font-sans text-gray-800">
+<body class="bg-slate-950 text-slate-100 font-sans">
 
-<!-- NAVBAR -->
-<nav class="flex justify-between items-center px-6 py-4 border-b">
-  <h1 class="text-xl font-bold">ConnectEd</h1>
-  <div class="space-x-4 text-sm">
-    <a href="#about">About</a>
-    <a href="#features">Features</a>
-    <a href="#waitlist" class="font-semibold">Join Waitlist</a>
+<!-- NAV -->
+<nav class="flex justify-between items-center px-6 py-4 border-b border-slate-800">
+  <h1 class="text-xl font-bold tracking-wide">Connect<span class="text-indigo-400">Ed</span></h1>
+  <div class="space-x-6 text-sm text-slate-300">
+    <a href="#problem" class="hover:text-white">Problem</a>
+    <a href="#how" class="hover:text-white">How it works</a>
+    <a href="#waitlist" class="text-indigo-400 font-semibold">Join</a>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="text-center px-6 py-20 bg-gray-50">
-  <h2 class="text-3xl md:text-4xl font-bold mb-4">
-    Where students find education that fits their future.
+<section class="px-6 py-24 text-center bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
+  <h2 class="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
+    Where students find education <br />
+    <span class="text-indigo-400">that actually fits their future.</span>
   </h2>
-  <p class="max-w-2xl mx-auto text-gray-600 mb-8">
-    A career-first platform helping students discover the right courses and institutions.
+
+  <p class="max-w-2xl mx-auto text-slate-300 text-lg mb-10">
+    Choosing education today is full of noise.  
+    ConnectEd helps you cut through it — using logic, data, and career intent.
   </p>
-  <a href="#waitlist" class="bg-black text-white px-8 py-3 rounded-lg">
-    Join Early Access
+
+  <a href="#waitlist"
+     class="inline-block bg-indigo-500 hover:bg-indigo-600 transition px-10 py-4 rounded-xl font-semibold">
+    Get Early Access
   </a>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="max-w-4xl mx-auto px-6 py-16">
-  <h3 class="text-2xl font-bold mb-4 text-center">What is ConnectEd?</h3>
-  <p class="text-center text-gray-600">
-    ConnectEd is an education discovery platform that matches students with
-    the right educational opportunities based on their career goals, skills,
-    and interests.
-  </p>
+<!-- PROBLEM -->
+<section id="problem" class="max-w-5xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold mb-6 text-center">The Problem</h3>
+
+  <div class="grid md:grid-cols-3 gap-8 text-slate-300">
+    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+      <h4 class="font-semibold mb-2 text-white">Too many options</h4>
+      <p>Thousands of courses. Thousands of colleges. No clear signal.</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+      <h4 class="font-semibold mb-2 text-white">Career comes last</h4>
+      <p>Most platforms sell education, not outcomes.</p>
+    </div>
+
+    <div class="bg-slate-900 p-6 rounded-xl border border-slate-800">
+      <h4 class="font-semibold mb-2 text-white">Decisions made blindly</h4>
+      <p>Students commit years of life with incomplete information.</p>
+    </div>
+  </div>
 </section>
 
-<!-- FEATURES -->
-<section id="features" class="bg-gray-50 px-6 py-16">
-  <h3 class="text-2xl font-bold text-center mb-10">Key Features</h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-center">
+<!-- SOLUTION -->
+<section class="bg-slate-900 px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-6">The ConnectEd Approach</h3>
+
+  <p class="max-w-3xl mx-auto text-center text-slate-300 mb-12">
+    We flip the model.  
+    Start with the *career, then work backward to the **right education*.
+  </p>
+
+  <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
     <div>
-      <h4 class="font-semibold mb-2">Personalized Matching</h4>
-      <p class="text-sm text-gray-600">Career-based course and institution recommendations.</p>
+      <h4 class="font-semibold text-indigo-400 mb-2">Career-first logic</h4>
+      <p class="text-slate-300 text-sm">
+        We prioritize long-term career fit over brand names.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-indigo-400 mb-2">Signal over noise</h4>
+      <p class="text-slate-300 text-sm">
+        Filter institutions using outcomes, skills, and relevance.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold text-indigo-400 mb-2">Built for thinkers</h4>
+      <p class="text-slate-300 text-sm">
+        Transparent, explainable recommendations — not black boxes.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="max-w-6xl mx-auto px-6 py-20">
+  <h3 class="text-3xl font-bold text-center mb-12">How It Works</h3>
+
+  <div class="grid md:grid-cols-4 gap-8 text-center text-slate-300">
+    <div>
+      <div class="text-indigo-400 font-bold text-xl mb-2">01</div>
+      <p>Understand your interests & skills</p>
     </div>
     <div>
-      <h4 class="font-semibold mb-2">Institution Profiles</h4>
-      <p class="text-sm text-gray-600">Compare colleges, programs, and outcomes.</p>
+      <div class="text-indigo-400 font-bold text-xl mb-2">02</div>
+      <p>Map them to real-world careers</p>
     </div>
     <div>
-      <h4 class="font-semibold mb-2">Career Guidance</h4>
-      <p class="text-sm text-gray-600">Insights into careers, skills, and market demand.</p>
+      <div class="text-indigo-400 font-bold text-xl mb-2">03</div>
+      <p>Identify best-fit education paths</p>
     </div>
     <div>
-      <h4 class="font-semibold mb-2">Direct Communication</h4>
-      <p class="text-sm text-gray-600">Connect directly with institutions and counselors.</p>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-2">Application Tracking</h4>
-      <p class="text-sm text-gray-600">Track applications and deadlines in one place.</p>
-    </div>
-    <div>
-      <h4 class="font-semibold mb-2">Student-First Design</h4>
-      <p class="text-sm text-gray-600">Built for clarity, simplicity, and confidence.</p>
+      <div class="text-indigo-400 font-bold text-xl mb-2">04</div>
+      <p>Apply with clarity & confidence</p>
     </div>
   </div>
 </section>
 
 <!-- WAITLIST -->
-<section id="waitlist" class="px-6 py-16 text-center">
-  <h3 class="text-2xl font-bold mb-4">Join the Early Access List</h3>
-  <p class="text-gray-600 mb-6">
-    Be the first to know when ConnectEd launches.
+<section id="waitlist" class="px-6 py-24 text-center bg-gradient-to-br from-indigo-950 to-slate-950">
+  <h3 class="text-3xl font-bold mb-4">Early Access</h3>
+  <p class="text-slate-300 mb-8">
+    If you like thinking before deciding — you’ll like ConnectEd.
   </p>
 
-  <!-- Replace the Google Form link later -->
-  <a href="https://forms.gle/2AG9bN5vc4LqyQfJA" target="_blank"
-     class="inline-block bg-black text-white px-8 py-3 rounded-lg">
-    Join Waitlist
+  <!-- Replace link -->
+  <a href="https://forms.gle/ThfKP4Xe13wsZtSq6"
+     target="_blank"
+     class="inline-block bg-indigo-500 hover:bg-indigo-600 transition px-10 py-4 rounded-xl font-semibold">
+    Join the Waitlist
   </a>
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center py-6 border-t text-sm text-gray-500">
-  ©️ 2026 ConnectEd · Privacy Policy · Terms
+<footer class="text-center py-8 text-sm text-slate-500 border-t border-slate-800">
+  ©️ 2026 ConnectEd · Built for curious minds · Privacy · Terms
 </footer>
 
 </body>
