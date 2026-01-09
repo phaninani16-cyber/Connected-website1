@@ -11,6 +11,37 @@
     .glow {
       box-shadow: 0 0 40px rgba(99,102,241,0.25);
     }
+/* Institution Tile Styling */
+.institution-tile {
+  padding: 40px 20px;
+  background: #fafafa;
+}
+
+.institution-card {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 14px;
+  background: #ffffff;
+  border: 1px dashed #ccc;
+  transition: transform 0.3s ease;
+}
+
+.institution-card:hover {
+  transform: translateY(-4px);
+}
+
+.institution-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.internal-note {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #777;
+}
   </style>
 </head>
 
@@ -210,49 +241,6 @@
 
   </div>
 </section>
-
-<section class="institution-onboarding" id="institutions">
-  <h2>Institution Partner Access</h2>
-  <p class="subtext">
-    For accredited institutions interested in student alignment and outcome-based visibility.
-  </p>
-
-  <div class="institution-grid">
-
-    <div class="institution-box">
-      <h3>Outcome-Focused Visibility</h3>
-      <p>
-        Institutions are mapped into student journeys based on academic fit,
-        career alignment, and extracurricular ecosystem.
-      </p>
-    </div>
-
-    <div class="institution-box">
-      <h3>Career-Mapped Discovery</h3>
-      <p>
-        Appear only in relevant career paths — not generic rankings —
-        ensuring higher intent and better student alignment.
-      </p>
-    </div>
-
-    <div class="institution-box">
-      <h3>Early Partner Program</h3>
-      <p>
-        Select institutions are onboarded in a controlled rollout
-        to help shape the platform and data standards.
-      </p>
-    </div>
-
-  </div>
-
-  <div class="institution-cta">
-    <p>
-      Institutions interested in participating in the early access program
-      may request onboarding details.
-    </p>
-    <a href="#contact" class="soft-btn">Request Partner Access</a>
-  </div>
-</section>
   
 <!-- CTA -->
 <section id="waitlist" class="px-6 py-28 text-center bg-gradient-to-br from-indigo-950 to-slate-950">
@@ -275,6 +263,19 @@
   </p>
 </section>
 
+<section class="institution-tile">
+  <a href="institutions.html" class="institution-link">
+    <div class="institution-card">
+      <h3>Institution Partner Access</h3>
+      <p>
+        Internal access for accredited institutions exploring
+        career-aligned student discovery.
+      </p>
+      <span class="internal-note">Internal / Partner Use</span>
+    </div>
+  </a>
+</section>
+  
 <footer class="px-6 py-10 bg-slate-950 border-t border-slate-800 text-center text-slate-500 text-sm">
   ©️ 2026 ConnectEd • Career-focused education discovery
 </footer>  
