@@ -310,6 +310,56 @@
 .choice-btn:hover {
   background: rgba(127,92,255,0.4);
 }    
+/* Career Roadmap Visual */
+.roadmap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.roadmap-step {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(99,102,241,0.25);
+  border-radius: 14px;
+  padding: 16px 20px;
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+}
+
+.roadmap-step p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+.roadmap-label {
+  display: block;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7aa2ff;
+  margin-bottom: 6px;
+}
+
+.roadmap-line {
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(
+    to bottom,
+    rgba(127,92,255,0.6),
+    rgba(127,92,255,0.1)
+  );
+  margin: 6px 0;
+}
+
+.roadmap-step.highlight {
+  background: linear-gradient(
+    135deg,
+    rgba(127,92,255,0.25),
+    rgba(92,225,230,0.15)
+  );
+}    
   </style>
 </head>
 
@@ -540,19 +590,48 @@
     </div>
 
     <div id="step-4" class="demo-step">
-      <h4>Your Sample Pathway</h4>
-      <p>
-        Based on your inputs, ConnectED would recommend:
-        <br><br>
-        <strong>Career:</strong> Software & AI Engineering  
-        <br>
-        <strong>Education:</strong> Computer Science → Specialisation  
-        <br>
-        <strong>Institutions:</strong> Best-fit colleges mapped to you
-      </p>
+  <h4>Your Career Roadmap</h4>
+  <p class="demo-subtext">
+    A simplified view of how your interests translate into a real future path.
+  </p>
+
+  <div class="roadmap">
+
+    <div class="roadmap-step">
+      <span class="roadmap-label">You</span>
+      <p>Your interests & strengths</p>
     </div>
+
+    <div class="roadmap-line"></div>
+
+    <div class="roadmap-step">
+      <span class="roadmap-label">Education</span>
+      <p>B.Tech / B.Sc in Computer Science</p>
+    </div>
+
+    <div class="roadmap-line"></div>
+
+    <div class="roadmap-step">
+      <span class="roadmap-label">Skills</span>
+      <p>Programming · Problem Solving · AI Basics</p>
+    </div>
+
+    <div class="roadmap-line"></div>
+
+    <div class="roadmap-step">
+      <span class="roadmap-label">Experience</span>
+      <p>Projects · Internships · Hackathons</p>
+    </div>
+
+    <div class="roadmap-line"></div>
+
+    <div class="roadmap-step highlight">
+      <span class="roadmap-label">Career</span>
+      <p>Software / AI Engineer</p>
+    </div>
+
   </div>
-</section>
+</div>
 
 <!-- DEMO FLOW -->
 <section class="student-demo-mini">
