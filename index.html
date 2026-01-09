@@ -17,17 +17,61 @@
   <p>Explore career paths designed around who you are.</p>
   <a href="#waitlist" class="soft-btn">Continue Your Journey</a>
 </section>   
-    
-    /* Institution Tile – AI Themed */
+
+/* Institution Partner Access – Minimal AI Tile */
 .institution-tile {
-  padding: 40px 20px;
-  background: linear-gradient(
-    135deg,
-    rgba(88, 80, 236, 0.08),
-    rgba(59, 130, 246, 0.08)
-  );
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
 }
 
+.institution-card {
+  max-width: 480px;
+  width: 100%;
+  padding: 28px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #0b1220, #121c2e);
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.institution-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 60px rgba(99, 102, 241, 0.28);
+}
+
+/* Centered Heading */
+.institution-card h3 {
+  color: #e0e7ff;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* Body text stays subtle */
+.institution-card p {
+  color: #c7d2fe;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* Internal note – centered & quiet */
+.internal-note {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #7aa2ff;
+  opacity: 0.85;
+}
+
+.institution-link {
+  text-decoration: none;
+  color: inherit;
+}
+    
 .institution-card {
   max-width: 480px;
   margin: 0 auto;
@@ -48,10 +92,6 @@
   box-shadow: 0 30px 70px rgba(99, 102, 241, 0.35);
 }
 
-.institution-card h3 {
-  color: #e0e7ff;
-}
-
 .institution-card p {
   color: #c7d2fe;
   font-size: 14px;
@@ -60,16 +100,7 @@
 .institution-link {
   text-decoration: none;
   color: inherit;
-}
-
-.internal-note {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 11px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #93c5fd;
-}     
+}    
 /* Student Journey Sections */
 .student-section {
   padding: 80px 20px;
