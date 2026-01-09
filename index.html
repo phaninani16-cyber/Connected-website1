@@ -288,6 +288,28 @@
   color: #7f5cff;
   margin-bottom: 10px;
 }
+.demo-step {
+  display: none;
+  margin-top: 25px;
+}
+
+.active-step {
+  display: block;
+}
+
+.choice-btn {
+  margin: 8px;
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: #e0e7ff;
+  cursor: pointer;
+}
+
+.choice-btn:hover {
+  background: rgba(127,92,255,0.4);
+}    
   </style>
 </head>
 
@@ -487,22 +509,47 @@
 </section>
   
 <!-- ENGINE -->
-<section class="decision-engine-mini">
-  <div class="decision-box">
-    <h3>The ConnectED Decision Engine</h3>
-    <p class="decision-desc">
-      A structured intelligence layer that connects students to the most
-      relevant education and career outcomes.
-    </p>
+<section class="student-demo-mini">
+  <div class="demo-card">
+    <h3>Your Guided Student Journey</h3>
+    <p class="demo-subtext">Answer a few questions to see how ConnectED works.</p>
 
-    <div class="decision-flow">
-      <span>Input</span>
-      <span>→</span>
-      <span>Analysis</span>
-      <span>→</span>
-      <span>Path Mapping</span>
-      <span>→</span>
-      <span>Recommendations</span>
+    <div id="step-1" class="demo-step active-step">
+      <h4>Step 1: What interests you?</h4>
+      <button class="choice-btn">Technology</button>
+      <button class="choice-btn">Healthcare</button>
+      <button class="choice-btn">Arts & Design</button>
+      <button class="choice-btn">Business</button>
+      <button onclick="nextStep(1)">Next</button>
+    </div>
+
+    <div id="step-2" class="demo-step">
+      <h4>Step 2: What are your strengths?</h4>
+      <button class="choice-btn">Problem Solving</button>
+      <button class="choice-btn">Creativity</button>
+      <button class="choice-btn">Communication</button>
+      <button onclick="nextStep(2)">Next</button>
+    </div>
+
+    <div id="step-3" class="demo-step">
+      <h4>Step 3: Career preference</h4>
+      <button class="choice-btn">High Growth</button>
+      <button class="choice-btn">Stability</button>
+      <button class="choice-btn">Impact</button>
+      <button onclick="nextStep(3)">Next</button>
+    </div>
+
+    <div id="step-4" class="demo-step">
+      <h4>Your Sample Pathway</h4>
+      <p>
+        Based on your inputs, ConnectED would recommend:
+        <br><br>
+        <strong>Career:</strong> Software & AI Engineering  
+        <br>
+        <strong>Education:</strong> Computer Science → Specialisation  
+        <br>
+        <strong>Institutions:</strong> Best-fit colleges mapped to you
+      </p>
     </div>
   </div>
 </section>
@@ -576,6 +623,11 @@
 <footer class="px-6 py-10 bg-slate-950 border-t border-slate-800 text-center text-slate-500 text-sm">
   ©️ 2026 ConnectEd • Career-focused education discovery
 </footer>  
-  
+<script>
+  function nextStep(current) {
+    document.getElementById(`step-${current}`).classList.remove("active-step");
+    document.getElementById(`step-${current + 1}`).classList.add("active-step");
+  }
+</script>  
 </body>
 </html>
